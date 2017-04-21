@@ -115,7 +115,7 @@ class Survey extends Component {
             }
           })
         }
-        <div style={{marginBottom:55}}>
+        <div style={{marginBottom:75}}>
           <div>
             <button className="btn-submit" onClick={this.validateFields}>
               Start Chat
