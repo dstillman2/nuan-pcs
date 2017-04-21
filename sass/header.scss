@@ -1,0 +1,38 @@
+.header {
+  background: #302c2d;
+  height: 43px;
+  border-top-left-radius: 1em;
+  border-bottom: 5px solid #C5d94A;
+
+  .logo {
+    width: 110px;
+    height: 43px;
+    float: left;
+
+    img {
+      position: relative;
+      top: 4px;
+      left: 2px;
+      max-width: 100%;
+    }
+  }
+
+  .btn-close {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: 15px;
+    overflow: hidden;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

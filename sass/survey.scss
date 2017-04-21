@@ -1,0 +1,114 @@
+.survey {
+  margin-top: 15px;
+
+  .form-group {
+    position: relative;
+    padding: 10px 0;
+
+    .error-icon {
+      display: none;
+      position: absolute;
+      bottom: 37px;
+      right: 15px;
+      background: url('./img/icon-form-error.png') no-repeat;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+    }
+
+    &.error {
+      border: #FF0000;
+
+      .error-icon {
+        display: block;
+      }
+
+      input[type="text"] {
+        border: 1px solid red;
+        background: #ffccca;
+      }
+    }
+  }
+
+  .error-text {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: red;
+    float: right;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
+
+  select {
+    width: 100%;
+    height: 35px;
+    font-size: 0.9em;
+
+    &:focus {
+      background: #edfbda;
+    }
+  }
+
+  input[type="text"] {
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 0.9em;
+
+    &:focus {
+      background: #edfbda;
+    }
+  }
+
+  .btn-submit {
+    cursor: pointer;
+    margin: 10px 0;
+    background: url('./img/btn-send-idle.png') repeat-x;
+    background-size: contain;
+    border: 0;
+    color: #FFF;
+    font-size: 0.95em;
+    text-shadow: 1px 1px #555;
+    border-radius: 4px;
+    padding: 10px 20px;
+    float: right;
+
+    &:hover {
+      background: url('./img/btn-send-hover.png') repeat-x;
+      background-size: contain;
+    }
+  }
+
+  .required-field {
+    float: right;
+    font-size: 0.8em;
+    color: #999;
+  }
+}
+
+.guide-li::after {
+  display: table;
+  clear: both;
+  content: '';
+  visibility: none;
+}
+
+.fake-img {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  background: #F1F1F1;
+}

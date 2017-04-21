@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+div::after {
+  display: table;
+  clear: both;
+  content: '';
+  visibility: hidden;
+  height: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+@import './header.scss';
+@import './footer.scss';
+@import './guide.scss';
+@import './survey.scss';
+
+#chatbox {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+}
+
+.body {
+  padding: 15px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: 1px solid #BFBFBF;
+  height: 100%;
+
+  .heading {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .breadcrumbs {
+    list-style-type: none;
+    padding: 10px 0 15px 0;
+    font-size: 0.9em;
+
+    li {
+      float: left;
+
+      a {
+        color: #9cb30c;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &::after {
+        padding: 0 4px;
+        content: '/';
+      }
+
+      &:last-child {
+        a {
+          color: #999;
+          cursor: default;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &::after {
+          content: '';
+        }
+      }
+    }
+  }
+}
